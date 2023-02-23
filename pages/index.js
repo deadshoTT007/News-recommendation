@@ -1,7 +1,16 @@
 import styles from '../styles/main.module.scss'
+import SearchIcon from '@mui/icons-material/Search';
 
-export default () => (
-	<main>
-		<h1 class={styles.main}>Welcome to Next.js</h1>
-	</main>
-)
+const Header = () => {
+	return (
+		
+			<div className={styles.mainHeader}>
+				<div className={styles.headerLogo}>News Recommend</div>
+				<div className={styles.headerSearchContainer}>
+					<SearchIcon/>
+				</div>
+			</div>
+	)
+}
+
+export default Header
