@@ -1,16 +1,15 @@
-import styles from '../styles/main.module.scss'
-import SearchIcon from '@mui/icons-material/Search';
+import Header from "./Header"
+import MainNews from "./MainNews"
 
-const Header = () => {
+
+const Index = () => {
 	return (
-		
-			<div className={styles.mainHeader}>
-				<div className={styles.headerLogo}>News Recommend</div>
-				<div className={styles.headerSearchContainer}>
-					<SearchIcon/>
-				</div>
-			</div>
+		<>
+		<Header/>
+		<MainNews/>
+		</>
+			
 	)
 }
 
-export default Header
+export default Index
