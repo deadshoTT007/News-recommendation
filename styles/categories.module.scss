@@ -3,7 +3,11 @@
     display: flex;
     margin-top: 20px;
     justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
     padding-bottom: 8px;
+    position: sticky;
+    top:10px
 }
 
 .categories {
@@ -11,5 +15,8 @@
     color: #5f6368;
     font-weight: 500;
     font-size: 0.875rem;
+    cursor: pointer;
+    user-select: none;
+    text-transform: capitalize;
 }
 

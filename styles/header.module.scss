@@ -1,7 +1,12 @@
 .mainHeader {
     display: grid;
     grid-template-columns: auto  1fr auto ;
-    padding: 8px;
+    padding: 8px 40px;
+    align-items: center;
+}
+
+.headerLogo {
+    font-weight: 600;
 }
 
 .headerSearchContainer {
@@ -15,8 +20,13 @@
     padding-left: 24px;
 }
 
+.mobileheaderSearchContainer {
+    display: none;
+}
+
+
 .focusheaderSearchContainer {
-    background-color: #fff;
+    background-color: #fff !important;
     box-shadow:  1px 1px 10px gray ;
     transition: background-color 100ms ease-in,width 100ms ease-out;
 }
@@ -38,4 +48,29 @@
 
 .mainHeaderContainer {
     border-bottom: 1px solid #dadce0;
+}
+
+@media screen and (max-width:1000px){
+    .headerSearchContainer{
+        display: none;
+    }
+    .mobileheaderSearchContainer {
+        margin: 10px auto;
+        width: 90%;
+        background-color: #F1F3F4;
+        padding: 6px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        // margin-top: 20px;
+    
+    }
+
+    .mainHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
 }
