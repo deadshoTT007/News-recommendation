@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from '../styles/commentbox.module.scss'
 
+<<<<<<< HEAD
 const CommentBox = ( props ) => {
 
   const { drawer } = props ;
@@ -64,6 +65,27 @@ const CommentBox = ( props ) => {
           <button className={styles.commentButton} >Write a comment</button>
         )}
       </div>
+=======
+const CommentBox = () => {
+
+    const [ commentText, setCommentText ] = useState("")
+
+    const onChangeHandler = (e) => {
+        setCommentText(e.target.value)
+    }
+  return (
+    <div className={styles.commentBox}>
+          <div className={styles.commentTitle}>Write a comment</div>
+          <div className={styles.divider}>
+            <div className={styles.dividerColor}></div>
+          </div>
+          <div className={styles.commentInputContainer}>
+            <textarea onChange={onChangeHandler} className={styles.commentInput} placeholder="Add a comment"/>
+            { commentText && (
+                <button>Post</button>
+            ) }
+          </div>
+>>>>>>> 050cae87313ef6b0000e67d0fcae60e12220268f
     </div>
   )
 }

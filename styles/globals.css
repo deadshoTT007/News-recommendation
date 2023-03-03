@@ -9,6 +9,13 @@ body {
     height: 100vh;
     font-family: "Open Sans";
     background-color: #F9FAFB;
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
+=======
+}
+
+* {
+    box-sizing: border-box  ;
+>>>>>>> 050cae87313ef6b0000e67d0fcae60e12220268f
 }
